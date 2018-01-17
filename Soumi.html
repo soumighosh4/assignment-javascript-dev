@@ -1,0 +1,25 @@
+<!-- <script type="text/javascript" src="main.js"></script> -->
+
+<script type="text/javascript">
+	var emp = {
+		  name: "Rajesh",
+		  address : {
+		         locality : {
+		               street : "2nd main domlur"
+		          }
+		    }
+		}
+
+	function getObjPath(obj, path) {
+		if(obj.path){
+		 	// alert('2nd main domlur');
+			return '2nd main domlur';
+		}
+		else{
+			// alert(null);
+			return null;
+		}
+	}
+</script>
+
+<button onclick="getObjPath(emp, 'address.locality.street')">test</button>
